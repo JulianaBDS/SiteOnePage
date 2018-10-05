@@ -1,0 +1,69 @@
+html{
+	height: 100%; 
+	overflow: hidden;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	perspective: 1px;
+}
+
+.menu{
+	z-index: 1;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	display: flex;
+	top: 0;
+
+}
+.menu label{
+	padding: 10px 0;
+	flex-grow: 1;
+	cursor: pointer;
+	transition: all .4s;
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 100%;
+	color: black;
+	background-color: yellow;
+}
+.menu label:hover{
+	background-color: rgba(230,161,30,.8);
+}
+
+.rd input{
+display: none;
+}
+
+.titulo-secao{
+	margin-top: -22%;
+	text-align: center;
+	font-size: 400%;
+	background-color: gray;
+	color: white;
+}
+
+#secao1{
+	background-color: #EE6225;
+	z-index: -1;
+}
+
+#secao2{
+	background-color: #5DBCD2;
+	transform: translateZ(-1px) scale(2);
+	z-index: -2;
+}
+
+.scroll{
+	position: relative;
+	padding: 25% 10%;
+	min-height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	transform-style: inherit;
+}
