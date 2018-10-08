@@ -1,69 +1,108 @@
-html{
-	height: 100%; 
-	overflow: hidden;
-}
+*{
+	padding: 0px;
+	margin: 0px;
 
+}
 body{
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	perspective: 1px;
+	padding: 0px;
+	margin: 0px;
 }
-
 .menu{
-	z-index: 1;
-	width: 100%;
-	height: 50px;
-	position: fixed;
-	display: flex;
 	top: 0;
-
+	left: 0;
+	position: fixed !important;
+	width: 100%;
+	z-index: 999;
+	height: 10%;
+	background: no-repeat;
+	background-color: rgba(222, 221, 217, 0.3);
 }
 .menu label{
-	padding: 10px 0;
-	flex-grow: 1;
-	cursor: pointer;
-	transition: all .4s;
+	width: 50%;
+	height: 50%;
+	float: left;
 	text-align: center;
-	font-family: 'Arial';
-	font-size: 100%;
-	color: black;
-	background-color: yellow;
+	padding: 15px 0;
+}
+.menu h1{
+	font-size: 150%;
+	color: white;
+	background-color: gray;
+}
+.rd{
+	display: none;
 }
 .menu label:hover{
-	background-color: rgba(230,161,30,.8);
+	background-color: rgba(222, 221, 217, 0.8);
+	cursor: pointer;
 }
-
-.rd input{
-display: none;
-}
-
-.titulo-secao{
-	margin-top: -22%;
-	text-align: center;
-	font-size: 400%;
-	background-color: gray;
-	color: white;
-}
-
-#secao1{
-	background-color: #EE6225;
-	z-index: -1;
-}
-
-#secao2{
-	background-color: #5DBCD2;
-	transform: translateZ(-1px) scale(2);
-	z-index: -2;
-}
-
 .scroll{
 	position: relative;
 	padding: 25% 10%;
-	min-height: 100%;
-	width: 100%;
 	box-sizing: border-box;
 	transform-style: inherit;
+
+}
+
+.titulo_secao{
+	text-align: center;
+	font-size: 400%;
+	color: white;
+	
+}
+.cont_secoes{
+	display: flex;
+	position:relative;
+	width: 100%;
+	padding: 20% 0%;
+	
+}
+
+#secao1 h1{
+	margin-top: -22%;
+}
+#secao1{
+	background-image: url(../img/bg-secao1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+p{
+	background-color: rgba(222, 221, 217, 0.1);
+	text-align: center;
+	padding: 5%;
+	float: left;
+	color: white;
+	width: 50%;
+	font-size: 150%;
+}
+#secao2 h1{
+	margin-top: -22%;
+}
+#secao2{
+	background-image: url(../img/bg-secao2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.lista-imgs-secao1{
+	padding-left: 10%;
+	float: right;
+	list-style-type: none;
+}
+.lista-imgs-secao1 img{
+	width: auto;
+	padding-bottom: 100%;
+	height: 80px;
+}
+.lista-imgs-secao2 img{
+	width: auto;
+	height: 80px;
+	padding-bottom: 300%;
+
+	
+}
+.lista-imgs-secao2{
+	padding-left: 10%;
+	float: right;
+	list-style-type: none;
 }
